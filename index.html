@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <main>
+    <nav class='navBar'>
+      <h1>NIKIL S</h1>
+      <div class='navigationMenu'>
+        <a href='#aboutMe'>About</a>
+        <a href='#skills'>Skills</a>
+        <a href='#project'>Projects</a>
+        <a href='#contactForm'>Let's Connect</a>
+      </div>
+    </nav>
+    <section class='heroSection'>
+      <img class='profileImage' src='/images/avatar.svg'>
+      <div class='herosectionDetails'>
+        <h1>NIKIL S</h1>
+        <h3>Full-Stack Developer at ShapeAI</h3>
+      </div>
+    </section>
+    <section class='aboutMe' id=aboutMe>
+      <h1>What I Do...</h1>
+      <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+        will give you a complete account of the system, and expound the actual teachings of the great explorer of the
+        truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is
+        pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are
+        extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because
+        it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great
+        pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain
+        some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has
+        no annoying consequences, or one who avoids a pain that produces no resultant pleasure.</p>
+    </section>
+    <section class='skillsAndProjects' id=skills>
+      <div class='skills'>
+        <h1 class='cardHeading'>Skills</h1>
+        <img src='/images/html.svg' title='html'>
+        <img src='/images/css.svg' title='CSS'>
+        <img src='/images/js.svg' title='JavaScript'>
+        <img src='/images/nodejs.svg' title='Node.JS'>
+        <img src='/images/react.svg' title='React'>
+        <img src='/images/mongodb.svg' title='MongoDB'>
+        <img src='/images/firebase.svg' title='Firebase'>
+        <img src='/images/redux.svg' title='Redux'>
+        <img src='/images/c.svg' title='C'>
+        <img src='/images/java.svg' title='Java'>
+      </div>
+      <div class='projects' id='project'>
+        <h1 class='cardHeading'>Projects</h1>
+        <div class='projectContainer'>
+          <img src='/images/css.svg'>
+          <div class='projectDescription'>
+            <h4>Project Name</h4>
+            <p>Some details of the project.Some details of the project.Some details of the project.</p>
+          </div>
+          <div class='projectContainer'>
+            <img src='/images/firebase.svg'>
+            <div class='projectDescription'>
+              <h4>Project Name</h4>
+              <p>Some details of the project.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class='contactForm' id='contactForm'>
+      <h2>Let's Connect</h2>
+      <div class='formGroup'>
+        <label for='name'>Enter Full Name</label><br />
+        <input type='text' id='name' placeholder='Full Name' />
+      </div>
+      <div class='formGroup'>
+        <label for='email'>Email</label><br />
+        <input type='text' id='email' placeholder='Email' />
+      </div>
+      <div class='formGroup'>
+        <label for='message'>Message</label><br />
+        <textarea placeholder="Send some message!" id="message" name="w3review" rows="4" cols="50"></textarea>
+      </div>
+      <button class='submitButton' onClick={submit()}>Connect</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
